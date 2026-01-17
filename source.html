@@ -3553,6 +3553,269 @@
           order: 1;
         }
       }
+
+      /* Live Experience Section */
+      .live-demo-section {
+        background: radial-gradient(circle at 75% 50%, rgba(34, 197, 94, 0.08) 0%, rgba(15, 23, 42, 0) 50%), #0f172a; /* Slate 900 with Glow */
+        padding: 120px 20px;
+        color: white;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .live-demo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+
+      .live-demo-content h2 {
+        font-size: clamp(36px, 4vw, 48px);
+        font-weight: 900;
+        margin-bottom: 24px;
+        line-height: 1.1;
+      }
+
+      .live-demo-content p {
+        font-size: 18px;
+        color: #94a3b8; /* Slate 400 */
+        margin-bottom: 40px;
+        line-height: 1.6;
+        max-width: 480px;
+      }
+
+      .live-demo-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(34, 197, 94, 0.1);
+        color: #4ade80;
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+        border: 1px solid rgba(34, 197, 94, 0.2);
+      }
+      
+      .live-trust-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      
+      .live-trust-value {
+        font-size: 24px;
+        font-weight: 900;
+        color: white;
+      }
+      
+      .live-trust-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* Phone Mockup */
+      .phone-wrapper {
+        display: flex;
+        justify-content: center;
+        perspective: 1000px;
+      }
+
+      .phone-mockup {
+        width: 280px;
+        height: 580px;
+        background: #1e293b;
+        border-radius: 40px;
+        border: 12px solid #334155;
+        position: relative;
+        box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+        transform: rotateY(-5deg) rotateX(5deg);
+        transition: transform 0.5s ease;
+        overflow: hidden;
+      }
+
+      .phone-mockup:hover {
+        transform: rotateY(0) rotateX(0);
+      }
+
+      /* Notch */
+      .phone-notch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 30px;
+        background: #334155;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        z-index: 10;
+      }
+
+      .phone-screen {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        color: #1e293b;
+        position: relative;
+      }
+
+      .screen-header {
+        height: 60px;
+        padding: 0 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1e293b;
+      }
+
+      .screen-content {
+        flex: 1;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .screen-logo {
+        color: #ff5722;
+        font-weight: 900;
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      .screen-h3 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 12px;
+        line-height: 1.2;
+      }
+
+      .screen-p {
+        font-size: 14px;
+        color: #64748b;
+        margin-bottom: 30px;
+      }
+
+      .phone-input-group {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .phone-input-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: #64748b;
+        margin-bottom: 8px;
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .phone-input-wrapper {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .country-select {
+        width: 80px;
+        padding: 12px;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1e293b;
+        cursor: pointer;
+        appearance: none;
+      }
+
+      .phone-input {
+        width: 140px;
+        padding: 12px;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #1e293b;
+        outline: none;
+        font-weight: 500;
+      }
+
+      .phone-input:focus {
+        border-color: #ff5722;
+        background: #fff;
+      }
+
+      .screen-btn {
+        width: 100%;
+        padding: 14px;
+        background: #10b981; /* Green */
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 10px;
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+      }
+
+      .screen-btn:hover {
+        background: #059669;
+      }
+
+      .success-message {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      .success-icon {
+        width: 60px;
+        height: 60px;
+        background: #ecfdf5;
+        color: #10b981;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 968px) {
+        .live-demo-container {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 60px;
+        }
+
+        .live-demo-content p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     </style>
   </head>
 
@@ -3962,6 +4225,84 @@
               ✓ See 3 leads turn into appointments live
               &nbsp;&nbsp;|&nbsp;&nbsp; ✓ Get your custom ROI calculation
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="live-demo-section">
+      <div class="live-demo-container">
+        <div class="live-demo-content">
+          <div class="live-demo-badge">
+            <span style="font-size: 16px">⚡</span> Live Interactive Demo
+          </div>
+          <h2>
+            Don't Believe Us?<br />
+            <span style="color: #4ade80">Try It Live Right Now.</span>
+          </h2>
+          <p>
+            Enter your real phone number below. If our AI doesn't call you
+            within <strong>3 minutes</strong>, we'll give you a month of service
+            for free.
+          </p>
+          <div class="live-trust-item">
+            <div class="live-trust-value">4.9/5</div>
+            <div class="live-trust-label">Average User Rating</div>
+          </div>
+        </div>
+
+        <div class="phone-wrapper">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="screen-header">
+                <div>9:41</div>
+                <div style="display: flex; gap: 6px">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M14 12v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5zM14 8v2.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5zM14 4v2.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5zM10 8v2.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5z"/>
+                  </svg>
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2 5v10h12V5H2zm13-1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h12zM3 2h10v1H3V2z"/>
+                  </svg>
+                </div>
+              </div>
+              
+              <div class="success-message" id="successMessage">
+                <div class="success-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <h3 class="screen-h3">Calling You...</h3>
+                <p class="screen-p">Check your phone now!</p>
+              </div>
+
+              <div class="screen-content" id="demoForm">
+                <div class="screen-logo">Ravan.ai</div>
+                <h3 class="screen-h3">Speed to Lead</h3>
+                <p class="screen-p">Test our 3-minute guarantee.</p>
+
+                <div class="phone-input-group">
+                  <label class="phone-input-label">Phone Number</label>
+                  <div class="phone-input-wrapper">
+                    <select class="country-select" id="countrySelect">
+                      <option value="+1">🇺🇸 +1</option>
+                      <option value="+44">🇬🇧 +44</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+91">🇮🇳 +91</option>
+                    </select>
+                    <input type="tel" class="phone-input" placeholder="(555) 123-4567" id="phoneInput">
+                  </div>
+                </div>
+
+                <button class="screen-btn" onclick="startDemoCall()">
+                  Call Me Now
+                </button>
+                <div style="margin-top: 16px; font-size: 11px; color: #94a3b8; line-height: 1.4;">
+                  By clicking, you agree to receive a demo call.<br>No data is stored.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -5063,6 +5404,36 @@
         // Initial calculation
         calculateROI();
       }
+    </script>
+    <script>
+      function startDemoCall() {
+        const phoneInput = document.getElementById("phoneInput");
+        const demoForm = document.getElementById("demoForm");
+        const successMessage = document.getElementById("successMessage");
+
+        if (!phoneInput.value) {
+          phoneInput.focus();
+          phoneInput.style.borderColor = "#ef4444";
+          return;
+        }
+
+        // Simulate processing
+        demoForm.style.display = "none";
+        successMessage.style.display = "flex";
+
+        setTimeout(() => {
+          // In a real app, this would trigger the API
+          // For now, redirect to our demo page
+          window.location.href = "/contact"; // Redirecting to contact as placeholder
+        }, 1500);
+      }
+
+      // Reset border on input
+      document
+        .getElementById("phoneInput")
+        .addEventListener("input", function () {
+          this.style.borderColor = "#e2e8f0";
+        });
     </script>
   </body>
 </html>
